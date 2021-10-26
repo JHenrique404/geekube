@@ -1,0 +1,88 @@
+.home .title {
+    font-size: 3rem;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+}
+
+.pc-left {
+    left: 0;
+}
+
+.pc-right {
+    right: 0;
+    float: right;
+}
+
+.camisetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+}
+
+.textos {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem; 
+}
+
+p {
+    font-size: 35px;
+    text-align: right;
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 6rem;
+    text-align: right;
+}
+
+
+.btn {
+    background-color: #16B94F;
+    border-color: #16B94F;
+    width: 350px;
+    height: 70px;
+    border-radius: 15px;
+
+    font-size: 40px;
+}
+
+.btn:hover {
+    background-color: #159642;
+    border-color: #159642;
+}
+
+.imgBoxes {
+    transition: transform 0.5s;
+}
+
+
+.imgBoxes:hover {
+    transition: 0.6s ease-in-out;
+    transform: scale(1.03);
+}

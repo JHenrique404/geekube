@@ -1,0 +1,71 @@
+<mat-sidenav-container class="container bg-light">
+    <mat-sidenav-content class="bg-light text-dark p-4">
+        <div class="row">
+            <div class="col-md-8 border-end border-2">
+                <h3>Carrinho</h3>
+                <hr>
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Qtd</th>
+                            <th>Modelo</th>
+                            <th>Tamanho</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Box básica</td>
+                            <td>1</td>
+                            <td>Masculino</td>
+                            <td>GG</td>
+                            <td>R$ 50.90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <h4>Resumo do pedido</h4>
+                <hr>
+                <div class="p-2">
+                    <div class="col-md-12 border rounded p-2 row div-block">
+                        <div class="col">
+                            <label><b>Endereço de entrega</b></label>
+                        </div>
+                        <div align="right" class="col">
+                            <button class="btn btn-sm btn-link" (click)="alterarEndereco()">Alterar</button>
+                        </div>
+                        <p>{{ endereco }}</p>
+                    </div>
+                    <br>
+
+                    <div class="col-md-12 border rounded p-2 row div-block">
+                        <div class="col">
+                            <label><b>Forma de pagamento</b></label>
+                        </div>
+                        <div align="right" class="col">
+                            <button class="btn btn-sm btn-link" (click)="alterarPagamento()">Alterar</button>
+                        </div>
+                        <p>{{ endereco }}</p>
+                    </div>
+                </div>
+                <hr>
+                <br>
+
+                <label><b>Quantidade de itens:</b> {{ qtd_total }}</label>
+                <br>
+                <label><b>Total do pedido:</b> R$ {{ total_pedido }}</label>
+                <br><br>
+
+                <input type="checkbox" id="concordar" class="form-check-input" />
+                <small> Ao fazer seu pedido, você concorda com as Condições de Uso da Geekube.</small>
+                <br>
+                <button class="btn btn-warning form-control" (click)="finalizarPedido()">Finalizar pedido</button>
+
+            </div>
+        </div>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
